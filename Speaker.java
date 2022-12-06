@@ -1,6 +1,8 @@
-class Ac{
+class Speaker{
 
-	static String brandname = "Lg";
+	static String brandname = "Bose";
+	static String frequency = "50Hz";
+	static boolean isWireLess = true ;
 	static boolean isConnected ;
 	static int minVolume = 0;
 	static int maxVolume = 5;
@@ -24,9 +26,10 @@ class Ac{
 			 
 			
 		System.out.println("main method has ended");
-		//System.out.println("Brandname Of the Ac is : "  +  brandname);
-		//System.out.println("maxvolume Of the AC is : "  +  maxVolume);
-		//System.out.println("minvolume Of the AC is : "  +  minVolume);
+		//System.out.println("Brandname Of the Speaker is : "  +  brandname);
+		//System.out.println("Frequency Of the Speaker is : "  +  frequency);
+		//System.out.println("maxvolume Of the Speaker is : "  +  maxVolume);
+		//System.out.println("minvolume Of the Speaker is : "  +  minVolume);
 	
 	}
 	
@@ -34,12 +37,12 @@ class Ac{
 		System.out.println("onOrOff method has started");
 		if(isConnected == false){
 			isConnected = true ;
-			System.out.println("Ac is turned on");
+			System.out.println("Speaker is turned on");
 			
 		}
 		else if(isConnected == true){
 			isConnected = false ;
-			System.out.println("Ac is turned off");
+			System.out.println("Speaker is turned off");
 		
 		}
 	
@@ -62,7 +65,7 @@ class Ac{
 			}
 			else{
 				
-				System.out.println("Turn on Ac");
+				System.out.println("Turn on Speaker");
 			}	
 	}
 	
